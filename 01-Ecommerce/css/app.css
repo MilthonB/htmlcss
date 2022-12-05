@@ -14,8 +14,23 @@ footer a{
     text-transform: uppercase;
 }
 
-a{
+
+/* Este selector es mas generico y si despues hay una clase se tomara la class */
+nav a{
+    text-transform: uppercase;
+}
+
+/* nav.navegacion{
+para idicar que el nav estas modificacndo sin el espacio en esta ocacion
+} */
+
+/* Este maneja mejor la especificidad al agregarle una class */
+.navegacion a{
     text-transform: lowercase;
+}
+
+#navegacion a {
+    text-transform: capitalize;
 }
 
 /* h2 span{
