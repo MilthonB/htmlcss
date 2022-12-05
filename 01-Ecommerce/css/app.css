@@ -10,7 +10,15 @@ h1 span{
     color: #037bc0;
 }
 
-h2 span{
+footer a{
+    text-transform: uppercase;
+}
+
+a{
+    text-transform: lowercase;
+}
+
+/* h2 span{
     color: green;
 }
 
@@ -29,4 +37,4 @@ footer a{
 nav a:nth-child(1){
     text-transform: uppercase;
     font-size: 50px;
-}
+} */
