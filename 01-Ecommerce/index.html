@@ -36,25 +36,89 @@
         <a href="blog.html">Blog</a>
         <a href="galeria.html">Galeria</a>
         <a href="contacto">Contacto</a>
-    </nav> 
+    </nav>
 
-    <!-- Nueva seccion muestra productos -->
+
+    <!-- Nueva seccion muestra las categorias de los productos -->
+    <section>
+        <h2>Categorias de Productos</h2>
+        <!-- Div se usara cuando nos e puda usar la estructura habitual de html en este caso no es un section porque 
+            el primer hijo  no es un heading-->
+        <div>
+            <img src="imgs/categoria1.jpg" alt="Imagen Categoria" , height="" , width="">
+            <a href="#">Oficina</a>
+        </div>
+
+        <div>
+            <img src="imgs/categoria2.jpg" alt="Imagen Categoria" , height="" , width="">
+            <a href="#">Hogar</a>
+        </div>
+
+        <div>
+            <img src="imgs/categoria3.jpg" alt="Imagen Categoria" , height="" , width="">
+            <a href="#">Cocina</a>
+        </div>
+
+    </section>
+
+    <!-- Nueva seccion -->
+    <section>
+        <div>
+            <h2>Sobre Nosotros</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusantium delectus eum illum atque
+                ullam debitis corporis unde consequuntur laudantium, vitae placeat asperiores, magni quis nulla corrupti
+                architecto! Animi, recusandae?</p>
+        </div>
+
+        <div>
+            <h2>Nuestros Productos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum accusantium delectus eum illum atque
+                ullam debitis corporis unde consequuntur laudantium, vitae placeat asperiores, magni quis nulla corrupti
+                architecto! Animi, recusandae?</p>
+        </div>
+    </section>
+
+
+        <!-- Nueva seccion muestra productos -->
     <!-- Se tiene que buscar la parte principal de nuestro documeto (pagina ) solo un main por pagina-->
     <main>
         <!-- Es menos importante que el h1, se puede tener mas de tres pero no es recomendable tener tantos h2 -->
         <!-- Este h2 es una nueva seccion porque se despega del padre por lo tanto es una nueva seccion -->
         <h2>Nuestros Productos</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto debitis, aspernatur praesentium eos ad
-            nisi
-            sit nam iste? Sapiente, dicta. Illum porro officia, autem molestias vitae eaque quae eius dolor!</p>
+
+        <!-- lista ul no tiene gerarquia y un ol si 1,2,3,4,5,6 etc -->
+        <!-- <ol>
+            <li>Numero 1</li>
+            <li>Numero 1</li>
+            <li>Numero 1</li>
+            <li>Numero 1</li>
+            <li>Numero 1</li>
+            <li>Numero 1</li>
+        </ol> -->
+
+        <div>
+            <div>
+                <img src="imgs/producto1.jpg" alt="Imagen Producto" />
+                <!-- Este no es un seccion y es un div porque no estoy en otra seccion si no que estoy en el main que es el mismo div  -->
+                <div> 
+                    <h3>Producto 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, error esse! A non earum similique
+                        officia ut, culpa, ullam hic beatae saepe consequuntur vel sunt omnis illum totam? Maiores,
+                        pariatur!</p>
+                    <p>$1,000,000.00</p>
+                    <a href="">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+
     </main>
 
-    <!-- Nueva seccion muestra otros productos -->
-    <section>
-        <h2>Categorias de Productos</h2>
-        <img src="imgs/categoria1.jpg" alt="Imagen Categoria" , height="" , width="">
-        
-    </section>
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate magnam quae consectetur aspernatur et
+            autem, non voluptate repellat blanditiis nemo ab laboriosam beatae incidunt culpa sed accusantium at itaque
+            quis.</p>
+    </footer>
 
     <!-- Es menos improtante que el h1 y el h2 -->
     <h3>Nuestro Blog</h3>
