@@ -6,6 +6,16 @@
     
 /* } */
 
+/* Aplicar el box sizing a todos los elementos */
+/* Snippet de internet desarrollado por Paul Irish */
+ html {
+    box-sizing:  border-box;
+ }
+ *,*:before, *:after{
+    box-sizing: inherit;
+ }
+
+
 .nombre-sitio span{
     color: #037bc0;
 }
@@ -16,7 +26,15 @@
     text-transform: uppercase;
 }
 
-
+/* Box Model */
+.sobre-nosotros{
+    background-color: red;
+    width: 200px;
+    padding: 25px;
+    /* box-sizing: border-box; */
+    /* box-sizing: content-box; */
+    /* box-sizing: border-box; */
+}
 
 /* footer a{
     text-transform: uppercase;
