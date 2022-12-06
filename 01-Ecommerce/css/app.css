@@ -15,31 +15,85 @@
     box-sizing: inherit;
  }
 
+ /* Globales */
+
+ a{
+    text-decoration: none;
+    color: #000;
+ }
+
+ .contenedor {
+    max-width: 1200px;
+    /* margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto; */
+    /* margin: 0 auto 0 auto; */
+    /* margin: 0 auto; */
+    margin-inline: auto;
+ }
+
+ /* Header y navegacion */
+
 
  .nombre-sitio{
     margin-top: 50px;
     margin-bottom: 50px;
+    text-align: center;
  }
 
 .nombre-sitio span{
     color: #037bc0;
 }
 
-/*ESTILOS: Modulos, BEM, SMACSS */
-.navegacion {
-    background-color: #e1e1e1;
-    text-transform: uppercase;
+.contenedor-navegacion{ 
+    /* el border se explande pero la navegacion no */
+    /* border-color: #e1e1e1;
+    border-top-style: solid;
+    border-width: 1px; */
+    border-top: 1px solid #e1e1e1;
+
 }
 
+.nav-principal{
+    /* la navegacion no se expande  */
+    /* padding: 20px 0px 20px 0px; ahorar lineas de codigo  */
+    padding: 20px 0px;
+}
+
+/* para mostrar una img se necesita tener un espacio donde mostrarla 
+    no basta con tener la img declarada si no se tiene un espacio donde 
+    mostrarla por lo tanto es necesario tener un height o otra propiedad que te 
+    de un espacio sufuciente para poder mostrar la img
+*/
+.hero{
+    background-image: url(../imgs/principal.jpg);
+    height: 550px;
+    /* para que no se repita la img */
+    background-repeat: no-repeat;
+    /* para tomar todo el espacio disponile  */
+    background-size: cover;
+}
+
+
+/*ESTILOS: Modulos, BEM, SMACSS */
+/* .navegacion {
+    background-color: #e1e1e1;
+    text-transform: uppercase;
+} */
+
 /* Box Model */
-.sobre-nosotros{
+/* .sobre-nosotros{
     background-color: red;
     width: 200px;
-    padding: 25px;
+    padding: 25px; */
     /* box-sizing: border-box; */
     /* box-sizing: content-box; */
     /* box-sizing: border-box; */
-}
+/* } */
+
+/* display inline y block  */
+
 
 /* footer a{
     text-transform: uppercase;
