@@ -36,6 +36,10 @@
  /*  para tomar el tama;o disponible de area del contenedor del grid */
  img {
     max-width: 100%;
+    /* elimina el espacio entre la img y el elemento siguiente  que se 
+    encuentra de bajo
+     */
+    display: block;
  }
 
  /* Header y navegacion */
@@ -105,6 +109,32 @@
     /* grid-template-rows: 1fr 1fr; */
     /* para crear areas */
 
+}
+.categorias h2{
+    text-align: center;
+}
+
+.categoria a{
+    /* porque no funciona porque los a tienen es un display inline si
+        lo quieres alinear no es posible para poder usarlo se necesita
+        cambiarlo a block 
+    */
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    border-bottom-right-radius: 10px;
+}
+
+/* hover es cuando te posiscionas en un elemento es decir que cuando
+    me situe por encima o pase por encima de a entonces se activara un hover
+
+*/
+.categoria a:hover{
+    /* color de fondo */
+    background-color: #037bc0;
+    /* color del texto */
+    color: #fff;
 }
 
 /*ESTILOS: Modulos, BEM, SMACSS */
