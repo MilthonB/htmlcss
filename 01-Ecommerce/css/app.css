@@ -59,6 +59,12 @@
     /* la navegacion no se expande  */
     /* padding: 20px 0px 20px 0px; ahorar lineas de codigo  */
     padding: 20px 0px;
+    /* se habilita el flex en esos elementos */
+    display: flex;
+    /* No  es necesario usarlo al menos que necesites o que se tenga unn scree
+       mayor
+    */
+    /* flex-direction: row-reverse; */
 }
 
 /* para mostrar una img se necesita tener un espacio donde mostrarla 
