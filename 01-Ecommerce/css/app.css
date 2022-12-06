@@ -33,6 +33,11 @@
     margin-inline: auto;
  }
 
+ /*  para tomar el tama;o disponible de area del contenedor del grid */
+ img {
+    max-width: 100%;
+ }
+
  /* Header y navegacion */
 
 
@@ -64,7 +69,9 @@
     /* No  es necesario usarlo al menos que necesites o que se tenga unn scree
        mayor
     */
-    /* flex-direction: row-reverse; */
+    /* flex-direction: row;  pordefault es row*/
+    /* justify espece beteween es porque por default es row */
+    justify-content: space-between;
 }
 
 /* para mostrar una img se necesita tener un espacio donde mostrarla 
@@ -81,6 +88,24 @@
     background-size: cover;
 }
 
+/* Categorias */
+.listado-categorias{
+
+    display: grid;
+    /* para crear columnas */
+    /* grid-template-columns: column1 column2 column3 column4; */
+    /* grid-template-columns: 200px 200px 200px 200px; */
+    /* grid-template-columns: repeat(4,200px); */
+    grid-template-columns: repeat(3, 1fr);
+    /* Separacion de elementos con gap */
+    gap: 20px;
+    /* height: 300px; */
+    /* para crear filas */
+    /* grid-template-rows: 100px 100px; */
+    /* grid-template-rows: 1fr 1fr; */
+    /* para crear areas */
+
+}
 
 /*ESTILOS: Modulos, BEM, SMACSS */
 /* .navegacion {
