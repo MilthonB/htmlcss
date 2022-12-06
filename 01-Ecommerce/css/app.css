@@ -11,8 +11,8 @@
 /* Snippet de internet desarrollado por Paul Irish */
  html {
     box-sizing:  border-box;
-    /* un rem sera 10px con este font sizes */
-    font-size: 62.5;
+    /* un rem sera 10px con 62.5% font sizes */
+    font-size: 62.5%;
  }
  *,*:before, *:after{
     box-sizing: inherit;
@@ -27,8 +27,11 @@
  h1,h2,h3{
     font-family: 'Playfair Display', serif;
  }
- h3{
+ h2{
     font-size: 3rem;
+ }
+ h3{
+    font-size: 2.5rem;
  }
 
  a{
@@ -45,8 +48,8 @@
     margin-bottom: 0;
     margin-left: auto; */
     /* margin: 0 auto 0 auto; */
-    /* margin: 0 auto; */
-    margin-inline: auto;
+    margin: 0 auto;
+    /* margin-inline: auto; */
  }
 
  /*  para tomar el tama;o disponible de area del contenedor del grid */
@@ -60,8 +63,8 @@
 
  /* Header y navegacion */
  .nombre-sitio{
-    margin-top: 50rem;
-    margin-bottom: 50rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     text-align: center;
     font-size:4rem;
  }
@@ -82,7 +85,7 @@
 .nav-principal{
     /* la navegacion no se expande  */
     /* padding: 20px 0px 20px 0px; ahorar lineas de codigo  */
-    padding: 2rem 0px;
+    padding: 2rem 0;
     /* se habilita el flex en esos elementos */
     display: flex;
     /* No  es necesario usarlo al menos que necesites o que se tenga unn scree
@@ -91,6 +94,7 @@
     /* flex-direction: row;  pordefault es row*/
     /* justify espece beteween es porque por default es row */
     justify-content: space-between;
+    font-size: 1.5rem;
 }
 
 /* para mostrar una img se necesita tener un espacio donde mostrarla 
@@ -138,11 +142,10 @@
     text-align: center;
     padding: 2rem;
     font-size: 2rem;
-    border-bottom-right-radius: 1rem;
 }
 
 /* hover es cuando te posiscionas en un elemento es decir que cuando
-    me situe por encima o pase por encima de a entonces se activara un hover
+me situe por encima o pase por encima de a entonces se activara un hover
 
 */
 .categoria a:hover{
@@ -150,6 +153,7 @@
     background-color: #037bc0;
     /* color del texto */
     color: #fff;
+    border-bottom-right-radius: 1rem;
 }
 
 /*ESTILOS: Modulos, BEM, SMACSS */
