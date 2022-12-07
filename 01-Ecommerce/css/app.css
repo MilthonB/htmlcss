@@ -407,7 +407,22 @@ me situe por encima o pase por encima de a entonces se activara un hover
 .contendio-nosotros{
     display: grid;
     grid-template-columns:1fr 2fr;
+    /* Funcion de grid css
+        significa autofit
+        cuando las columnas lelven a un maximo de 250px o 25 rem entonces
+        se le asignara un 1fr a cada uno esto es para lo web responsive sin
+        usar mediaquery no suple a los mediaquerys 
+    */
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     column-gap: 4rem;
+}
+
+.informacion-nosotros{
+    /* orientar de izq a der */
+    display: flex;
+    /* direccion columna no row */
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* .grid-footer div{ */
