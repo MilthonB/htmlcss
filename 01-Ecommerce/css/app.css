@@ -68,6 +68,11 @@
     display: block;
  }
 
+ /* Utilidades */
+ .text-center{
+    text-align: center;
+ }
+
  /* Header y navegacion */
  .nombre-sitio{
     margin-top: 5rem;
@@ -141,6 +146,7 @@
     /* Manejando espacios en blanco */
     padding-top: 5rem;
 }
+.contenido-principal h2,
 .categorias h2{
     text-align: center;
 }
@@ -185,6 +191,77 @@ me situe por encima o pase por encima de a entonces se activara un hover
 
     /* para que se muestre la imagen */
     padding: 10rem 0;
+    margin-top: 5rem;
+}
+
+/* .sobre-nosotros-grid{ */
+    /* display: grid; */
+    /* repetelo 2 veces con la misma cadida de espacio 1 fr */
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* Para darle espacio a la columna y el elemto se separa de la linea*/
+    /* column-gap: 8rem;
+} */
+
+/* .texto-nosotros{ */
+    /* Esto indica la posicion del elemento
+       en este caso se posicionara en la linea 2 a la 3
+    */
+    /* grid-column: 2 / 3;
+    color: #fff;
+} */
+
+/* Con flexbox  */
+.sobre-nosotros-grid{
+    /* habilitar flexbox */
+    display: flex;
+    /* centrarlo de lado derecho o al final porque es una fila  */
+    justify-content: flex-end;
+}
+
+.texto-nosotros{
+    /* Para darle un ancho y se corta al 50% */
+    flex-basis: 50%;
+    /* padding de 5 rem de lado izq  */
+    padding-left: 5rem;
+    color: #fff;
+}
+
+/* Listado de productos */
+
+.contenido-principal{
+    /* Separacion */
+    padding-top: 5rem;
+}
+.producto{
+    background-color: #037bc0;
+}
+
+.texto-producto{
+    text-align: center;
+    color: #fff;
+}
+
+.texto-producto .precio{
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+
+.texto-producto h3{
+    margin: 0;
+}
+
+.texto-producto p {
+    margin: 0 0 .5rem 0;
+    /* font-size: 1.5rem; */
+}
+
+.texto-producto a{
+
+}
+
+.listado-productos{
+    display: grid;
+    grid-column: repe;
 }
 
 /*ESTILOS: Modulos, BEM, SMACSS */
