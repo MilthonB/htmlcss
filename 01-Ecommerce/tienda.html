@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Head informacion meta, informacion de sitio -->
+
+<head>
+    <!-- utiliza caracteres especiales como la ñ... etc -->
+    <meta charset="UTF-8">
+    <!-- Informacion en el encabezado en el navegador -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Responsive web informacion  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo de la pagina web-->
+    <title>Home</title>
+    <!-- codigo de css cuando existe una etiqueta style -->
+    <!-- De esta forma se cargan las hojas de estilo lo convierte en informacion meta -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+
+</head>
+
+<body>
+
+    <!-- 
+
+
+     -->
+
+    <!-- Header -->
+    <header>
+        <!-- solo un h1 por pagina -->
+        <h1 class="nombre-sitio">Tienda <span>Muebles</span></h1>
+    </header>
+
+    <div class="contenedor-navegacion">
+        <nav class="nav-principal contenedor">
+            <!-- Enlaces de navegacion -->
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="contacto">Contacto</a>
+        </nav>
+    </div>
+    <!-- Navegacion de enlaces -->
+
+
+
+
+    <!-- Nueva seccion muestra productos -->
+    <!-- Se tiene que buscar la parte principal de nuestro documeto (pagina ) solo un main por pagina-->
+    <main class="contenido-principal contenedor">
+        <!-- Es menos importante que el h1, se puede tener mas de tres pero no es recomendable tener tantos h2 -->
+        <!-- Este h2 es una nueva seccion porque se despega del padre por lo tanto es una nueva seccion -->
+        <h2 class="text-center">Nuestros Productos</h2>
+
+        <!-- lista ul no tiene gerarquia y un ol si 1,2,3,4,5,6 etc -->
+        <!-- <ol>
+            <li>Numero 1</li>
+            <li>Numero 1</li>
+            <li>Numero 1</li>
+            <li>Numero 1</li>
+            <li>Numero 1</li>
+            <li>Numero 1</li>
+        </ol> -->
+
+        <div class="listado-productos">
+            <div class="producto">
+                <img src="imgs/producto1.jpg" alt="Imagen Producto" />
+                <!-- Este no es un seccion y es un div porque no estoy en otra seccion si no que estoy en el main que es el mismo div  -->
+                <div class="texto-producto">
+                    <h3>Producto 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, error esse! A non earum similique
+                        officia ut, culpa, ullam hic beatae saepe consequuntur vel sunt omnis illum totam? Maiores,
+                        pariatur!</p>
+                    <p class="precio">$1,000,000.00</p>
+                    <a class="btn" href="">Agregar al carrito</a>
+                </div> <!-- Info Producto -->
+            </div> <!-- Producto -->
+
+            <div class="producto">
+                <img src="imgs/producto2.jpg" alt="Imagen Producto" />
+                <!-- Este no es un seccion y es un div porque no estoy en otra seccion si no que estoy en el main que es el mismo div  -->
+                <div class="texto-producto">
+                    <h3>Producto 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, error esse! A non earum similique
+                        officia ut, culpa, ullam hic beatae saepe consequuntur vel sunt omnis illum totam? Maiores,
+                        pariatur!</p>
+                    <p class="precio">$1,000,000.00</p>
+                    <a class="btn" href="">Agregar al carrito</a>
+                </div> <!-- Info Producto -->
+            </div> <!-- Producto -->
+
+            <div class="producto">
+                <img src="imgs/producto3.jpg" alt="Imagen Producto" />
+                <!-- Este no es un seccion y es un div porque no estoy en otra seccion si no que estoy en el main que es el mismo div  -->
+                <div class="texto-producto">
+                    <h3>Producto 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, error esse! A non earum similique
+                        officia ut, culpa, ullam hic beatae saepe consequuntur vel sunt omnis illum totam? Maiores,
+                        pariatur!</p>
+                    <p class="precio">$1,000,000.00</p>
+                    <a class="btn" href="">Agregar al carrito</a>
+                </div> <!-- Info Producto -->
+            </div> <!-- Producto -->
+
+            <div class="producto">
+                <img src="imgs/producto4.jpg" alt="Imagen Producto" />
+                <!-- Este no es un seccion y es un div porque no estoy en otra seccion si no que estoy en el main que es el mismo div  -->
+                <div class="texto-producto">
+                    <h3>Producto 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, error esse! A non earum similique
+                        officia ut, culpa, ullam hic beatae saepe consequuntur vel sunt omnis illum totam? Maiores,
+                        pariatur!</p>
+                    <p class="precio">$1,000,000.00</p>
+                    <a class="btn" href="">Agregar al carrito</a>
+                </div> <!-- Info Producto -->
+            </div> <!-- Producto -->
+
+            <div class="producto">
+                <img src="imgs/producto5.jpg" alt="Imagen Producto" />
+                <!-- Este no es un seccion y es un div porque no estoy en otra seccion si no que estoy en el main que es el mismo div  -->
+                <div class="texto-producto">
+                    <h3>Producto 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, error esse! A non earum similique
+                        officia ut, culpa, ullam hic beatae saepe consequuntur vel sunt omnis illum totam? Maiores,
+                        pariatur!</p>
+                    <p class="precio">$1,000,000.00</p>
+                    <a class="btn" href="">Agregar al carrito</a>
+                </div> <!-- Info Producto -->
+            </div> <!-- Producto -->
+
+            <div class="producto">
+                <img src="imgs/producto6.jpg" alt="Imagen Producto" />
+                <!-- Este no es un seccion y es un div porque no estoy en otra seccion si no que estoy en el main que es el mismo div  -->
+                <div class="texto-producto">
+                    <h3>Producto 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, error esse! A non earum similique
+                        officia ut, culpa, ullam hic beatae saepe consequuntur vel sunt omnis illum totam? Maiores,
+                        pariatur!</p>
+                    <p class="precio">$1,000,000.00</p>
+                    <a class="btn" href="">Agregar al carrito</a>
+                </div> <!-- Info Producto -->
+            </div> <!-- Producto -->
+
+        </div> <!-- Fin de listado de producto -->
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="grid-footer contenedor">
+            <div>
+                <h3> Categorias </h3>
+                <nav class="footer-menu">
+                    <a href="">Cocina</a>
+                    <a href="">Oficina</a>
+                    <a href="">Jardin</a>
+                    <a href="">Cochera</a>
+                    <a href="">Dormitorio</a>
+                </nav>
+            </div>
+
+            <div>
+                <h3> Sobre Nosotros </h3>
+                <nav class="footer-menu">
+                    <a href="">Nuestra Historia</a>
+                    <a href="">Mision, Vision y Valores</a>
+                    <a href="">Carreras</a>
+                    <a href="">Politica de Privaciodad</a>
+                    <a href="">Terminos de Servicios</a>
+                </nav>
+            </div>
+
+            <div>
+                <h3> Soporte </h3>
+                <nav class="footer-menu">
+                    <a href="">Preguntas Frecuentes</a>
+                    <a href="">Ayuda en Linea</a>
+                    <a href="">Confianza y Seguridad</a>
+                </nav>
+            </div>
+        </div>
+
+        <p class="copyright">Todos los derechos Reservados, TiendaMuebles</p>
+    </footer>
+
+    <!-- Es menos improtante que el h1 y el h2 -->
+    <!-- <h3>Nuestro Blog</h3> -->
+
+    <!-- Los parrafos no tiene limite de usa puedes tener muchos parrafos -->
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto illo reprehenderit ipsum, porro, dolores
+        veritatis, modi molestiae alias nobis possimus dignissimos esse. Eos voluptatibus eveniet eius ut rerum
+        voluptatem similique consequuntur ipsam temporibus laboriosam nam, officiis cupiditate tenetur alias, accusamus,
+        ex sit. Maiores consequatur quibusdam ab repudiandae culpa consequuntur porro facilis mollitia iusto eveniet.
+        Neque ea ullam a. Cum, debitis repellendus. Modi maxime quia, similique quae tempore quibusdam! Quisquam
+        molestiae reprehenderit libero ipsam ipsum, similique iusto ea error exercitationem autem aut id sed voluptatem
+        inventore. Quibusdam excepturi ducimus culpa dolorum dicta molestias nam. Voluptates, quas corporis voluptatem a
+        iusto illo.</p> -->
+
+    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptas dolorem tempore eaque ea. Deleniti ipsum
+        nam ab eius pariatur vel rem quibusdam voluptas beatae adipisci facere iusto accusamus omnis, officiis vero ad!
+        Inventore id, quaerat eum debitis deleniti veniam repellat adipisci optio earum reprehenderit voluptates illo,
+        eius pariatur sequi.
+    </p> -->
+
+    <!-- El / en etuquetas como img que no tienen etiqueta de cierre noe s necesario por el / al final, img solo tiene apertura -->
+    <!-- <img src="" alt="imgagen.jpg", height="", width=""/> -->
+
+    <!-- Enlaces -->
+
+    <!-- Apertura y cierre este enlace se gura relativo a el mismo documento, es decir estoy en index y quiero ir a sobre nosotros -->
+    <!-- Cualquier elemento puede ser una enlace es decir puede ser una img o video o button -->
+    <!-- <a href="nosotros.html">Ir a nuestra pagina Nosotors</a> -->
+
+</body>
+
+</html>
