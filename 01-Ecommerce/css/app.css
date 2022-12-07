@@ -371,6 +371,21 @@ me situe por encima o pase por encima de a entonces se activara un hover
 
 /* footer */
 
+.site-footer{
+    border-top: 1px solid #e1e1e1;
+    margin-top: 5rem;
+    padding-top: 5rem;
+}
+.grid-footer{
+    display: flex;
+    gap: 2rem;
+}
+
+.grid-footer div{
+    /* esto representa el fator de creciemiento */
+    flex: 1;
+}
+
 /*ESTILOS: Modulos, BEM, SMACSS */
 /* .navegacion {
     background-color: #e1e1e1;
