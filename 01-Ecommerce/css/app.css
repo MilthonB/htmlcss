@@ -371,20 +371,51 @@ me situe por encima o pase por encima de a entonces se activara un hover
 
 /* footer */
 
+.site-footer h3{
+    margin-bottom: .5rem;
+}
+
 .site-footer{
     border-top: 1px solid #e1e1e1;
     margin-top: 5rem;
     padding-top: 5rem;
 }
 .grid-footer{
-    display: flex;
+    /* display: flex; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
-.grid-footer div{
-    /* esto representa el fator de creciemiento */
-    flex: 1;
+/* los selectores no debe de ser mas de tres */
+/* .site-footer .grid-footer div #navegacion{
+    color: red;
+} */
+
+.footer-menu a{
+    display: block;
+    font-size: 1.3rem;
 }
+
+.copyright{
+    border-top: 1px solid #e1e1e1;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+/* .grid-footer div{ */
+    /* esto representa el fator de creciemiento 
+       sele agrega un 1px mas
+    */
+    /* flex: 1;
+}
+
+.grid-footer div:nth-child(2){
+    /* esto representa el fator de creciemiento 
+       sele agrega un 1px mas
+    */
+    /* flex: 3; */
+/* }  */
 
 /*ESTILOS: Modulos, BEM, SMACSS */
 /* .navegacion {
