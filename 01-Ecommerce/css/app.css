@@ -45,6 +45,9 @@
     text-decoration: none;
     color: #000;
  }
+ p{
+    font-size: 1.5rem;
+ }
 
 
 
@@ -73,6 +76,26 @@
     text-align: center;
  }
 
+.btn{
+    background-color: #8cbc00;
+    color: #fff;
+    /* Toma todo el ancho dispible */
+    display: block;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    /* transiciones  
+        tiene tres valores el primero es
+        que se va animar 
+        el segundo es la duracion 
+        y el tercero el efecto
+    */
+    transition: background-color .3s ease-out ;
+ }
+
+ .btn:hover{
+    background-color: #769c02;
+ }
  /* Header y navegacion */
  .nombre-sitio{
     margin-top: 5rem;
@@ -239,6 +262,7 @@ me situe por encima o pase por encima de a entonces se activara un hover
 .texto-producto{
     text-align: center;
     color: #fff;
+    padding: 2rem;
 }
 
 .texto-producto .precio{
@@ -255,13 +279,71 @@ me situe por encima o pase por encima de a entonces se activara un hover
     /* font-size: 1.5rem; */
 }
 
-.texto-producto a{
 
-}
 
 .listado-productos{
     display: grid;
-    grid-column: repe;
+    /* Seis columnas */
+    grid-template-columns: repeat(6,1fr);
+    /* el grid crece automaticamente no se necesita delcara las row */
+    /* grid-template-rows: repeat(3, 1fr); */
+    /* column-gap: 2rem;
+    row-gap: 2rem; */
+    gap: 1.5rem;
+    
+}
+
+.producto:nth-child(1){
+    /* grid-column: 1 / 7; */
+    grid-column-start: 1;
+    grid-column-end: 7;
+
+    /* posicionar una img del lado derecho */
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+
+}
+
+.producto:nth-child(1) img{
+    /* Le das una dimension a la img y luego con obejct fit llenas el espacio
+        con la img, el height y width solo son para darle tama;ao al box de la
+        imagen
+    */
+    height: 43rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.producto:nth-child(2){
+    /* grid-column: 1 / 7; */
+    grid-column-start: 1 ;
+    grid-column-end: 4;
+}
+
+.producto:nth-child(3){
+    /* grid-column: 1 / 7; */
+    grid-column-start: 4 ;
+    grid-column-end: 7;
+
+}
+
+.producto:nth-child(4){
+    /* grid-column: 1 / 7; */
+    grid-column-start: 1 ;
+    grid-column-end: 3;
+
+}
+.producto:nth-child(5){
+    /* grid-column: 1 / 7; */
+    grid-column-start: 3 ;
+    grid-column-end: 5;
+
+}
+.producto:nth-child(6){
+    /* grid-column: 1 / 7; */
+    grid-column-start: 5 ;
+    grid-column-end: 7;
+
 }
 
 /*ESTILOS: Modulos, BEM, SMACSS */
