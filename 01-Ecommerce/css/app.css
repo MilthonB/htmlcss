@@ -403,6 +403,13 @@ me situe por encima o pase por encima de a entonces se activara un hover
     text-align: center;
 }
 
+/* NOSOTROS */
+.contendio-nosotros{
+    display: grid;
+    grid-template-columns:1fr 2fr;
+    column-gap: 4rem;
+}
+
 /* .grid-footer div{ */
     /* esto representa el fator de creciemiento 
        sele agrega un 1px mas
