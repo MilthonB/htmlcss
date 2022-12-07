@@ -10,8 +10,9 @@
 /* Aplicar el box sizing a todos los elementos */
 /* Snippet de internet desarrollado por Paul Irish */
  html {
+    /* no modifica el tama;o del elemento cuando se agrega un padding o un width */
     box-sizing:  border-box;
-    /* un rem sera 10px con 62.5% font sizes */
+    /* un 1rem sera 10px con 62.5% font sizes */
     font-size: 62.5%;
  }
  *,*:before, *:after{
@@ -21,17 +22,23 @@
  body{
     font-family: 'Raleway', sans-serif;
     font-style: 1.6rem;
+    /* interlineado para que el texto de los parrafos no este unidos */
+    line-height: 1.5;
  }
  /* Globales */
 
  h1,h2,h3{
     font-family: 'Playfair Display', serif;
+    margin: 0 0 5rem 0;
+ }
+ h1{
+    font-size: 5rem;
  }
  h2{
-    font-size: 3rem;
+    font-size: 4rem;
  }
- h3{
-    font-size: 2.5rem;
+ h2,h3{
+    font-size: 3rem;
  }
 
  a{
@@ -64,9 +71,7 @@
  /* Header y navegacion */
  .nombre-sitio{
     margin-top: 5rem;
-    margin-bottom: 5rem;
     text-align: center;
-    font-size:4rem;
  }
 
 .nombre-sitio span{
@@ -104,11 +109,14 @@
 */
 .hero{
     background-image: url(../imgs/principal.jpg);
-    height: 55rem;
     /* para que no se repita la img */
     background-repeat: no-repeat;
     /* para tomar todo el espacio disponile  */
     background-size: cover;
+    /* valor 1px iz to der segundo 1px de arriba abajo */
+    /* background-position: 1px 1px; */
+    background-position: center center;
+    height: 55rem;
 }
 
 /* Categorias */
@@ -128,6 +136,10 @@
     /* grid-template-rows: 1fr 1fr; */
     /* para crear areas */
 
+}
+.categorias{
+    /* Manejando espacios en blanco */
+    padding-top: 5rem;
 }
 .categorias h2{
     text-align: center;
@@ -154,6 +166,25 @@ me situe por encima o pase por encima de a entonces se activara un hover
     /* color del texto */
     color: #fff;
     border-bottom-right-radius: 1rem;
+}
+
+
+/* Bloque Nosotros */
+.sobre-nosotros{
+    /* linear-gradient( to right -> es para darle la direccion ala gradiente
+    segundo valor es el color del degradado) */
+    /* De 0 a 50 sera el primer color y de 51 a 100 el siguiente color */
+    background-image: linear-gradient( to right, transparent 50%, #037bc0 50%, #037bc0 100%),
+    url(../imgs/nosotros.jpg);/* agregar imagen */
+    background-position: left center;
+    background-repeat: no-repeat;
+    /* cuando se tiene dos background entonces se usan dos valores en la propiedad
+       en este caso esta el background gradient y el background image
+    */
+    background-size: 100%, 120rem;
+
+    /* para que se muestre la imagen */
+    padding: 10rem 0;
 }
 
 /*ESTILOS: Modulos, BEM, SMACSS */
