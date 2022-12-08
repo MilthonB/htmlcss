@@ -507,6 +507,11 @@ me situe por encima o pase por encima de a entonces se activara un hover
     object-fit: cover;
 }
 
+.campo{
+    /* padding-bottom: 1.5rem; */
+    margin: 1.5rem;
+}
+
 /* .grid-footer div{ */
     /* esto representa el fator de creciemiento 
        sele agrega un 1px mas

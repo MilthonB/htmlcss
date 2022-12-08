@@ -52,6 +52,50 @@
     <!-- Se tiene que buscar la parte principal de nuestro documeto (pagina ) solo un main por pagina-->
     <main class="contenido-principal contenedor">
         <h2 class="text-center">Contacto</h2>
+
+        <form action="">
+            <!-- fieldset agrupa campos que estan relacionados -->
+            <fieldset>
+                <!-- legend es el encabezado de cada agrupacion de inputs -->
+                <legend>Tus Dartos</legend>
+
+                <!-- Div es display block -->
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <!-- readonly  -->
+                    <!-- req = validaciones -->
+                    <input value="Salamandra" id="nombre" type="text" placeholder="Coloca tu Nombre">
+                </div>
+
+                <div class="campo">    
+                    <label for="asunto">Asunto:</label>
+                    <input value="Divorcio" id="asunto" type="text" placeholder="Coloca tu Asunto">
+                </div>
+
+                <div class="campo">    
+                    <label for="email">Email:</label>
+                    <input  id="email" type="email" placeholder="Coloca tu Email">
+                </div>
+                <div class="campo">    
+                    <label for="tel">Telefono:</label>
+                    <input  id="tel" type="tel" placeholder="Coloca tu Telefono">
+                </div>
+
+                <div class="campo">    
+                    <label for="Mensaje">Mensaje:</label>
+                    <textarea name="" id="mensaje" cols="30" rows="10"></textarea>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Pais</legend>
+            </fieldset>
+            <fieldset>
+                <legend>Informacion extra </legend>
+            </fieldset>
+        </form>
+
     </main>
 
 
