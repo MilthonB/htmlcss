@@ -425,6 +425,25 @@ me situe por encima o pase por encima de a entonces se activara un hover
     justify-content: center;
 }
 
+
+/* BLOG */
+.contenedor-blog{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+}
+.contenedor-blog a{
+    font-size: 1.5rem;
+}
+
+.entrada{
+    border-bottom: 2px solid #e1e1e1;
+    padding-bottom: 4rem;
+    margin-bottom: 2rem;
+}
+
+
+
 /* .grid-footer div{ */
     /* esto representa el fator de creciemiento 
        sele agrega un 1px mas
