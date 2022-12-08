@@ -442,7 +442,15 @@ me situe por encima o pase por encima de a entonces se activara un hover
     margin-bottom: 2rem;
 }
 
-
+/* Este psudo-selector (las-of-type) */
+/* Toma el ultimo elemento que pertence al selector principal es decir
+   .entrada seria el selector o la clase principal y el pseudo-selecto es 
+   last-of-type
+   En este caso eliminamos el ultimo border 
+*/
+.entrada:last-of-type{
+    border: none;
+}
 
 /* .grid-footer div{ */
     /* esto representa el fator de creciemiento 
