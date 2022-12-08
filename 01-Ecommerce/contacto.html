@@ -63,8 +63,8 @@
                 <div class="campo">
                     <label for="nombre">Nombre:</label>
                     <!-- readonly  -->
-                    <!-- req = validaciones -->
-                    <input value="Salamandra" id="nombre" type="text" placeholder="Coloca tu Nombre">
+                    <!-- required = validaciones -->
+                    <input value="Salamandra" id="nombre" type="text" placeholder="Coloca tu Nombre" required>
                 </div>
 
                 <div class="campo">    
@@ -122,7 +122,21 @@
                     <label for="proveedor">Proveedor</label>
                     <input type="radio" id="proveedor" name="tipo" value="proveedor">
                 </div>
+
+                <div class="campo">
+                    <label for="categoria">Categoria de interes</label>
+                    <input name="categorias" list="categorias" >
+                    <!-- firefox no soporta el datalist -->
+                    <datalist id="categorias">
+                        <option value="Cocina">
+                        <option value="Exterior">
+                        <option value="Interior">
+                        <option value="Television">
+                        <option value="Comedor">
+                    </datalist>
+                </div>
             </fieldset>
+            <input type="submit" value="Enviar Formulario">
         </form>
 
     </main>
