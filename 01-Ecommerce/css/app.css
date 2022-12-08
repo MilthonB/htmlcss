@@ -100,11 +100,14 @@
     */
     transition: background-color .3s ease-out ;
     text-align: center;
+    border: none;
 
  }
 
  .btn:hover{
     background-color: #769c02;
+    /* poniter cuando estas por encima del btn  */
+    cursor: pointer;
  }
  /* Header y navegacion */
  .nombre-sitio{
@@ -507,11 +510,45 @@ me situe por encima o pase por encima de a entonces se activara un hover
     object-fit: cover;
 }
 
-.campo{
-    /* padding-bottom: 1.5rem; */
-    margin: 1.5rem;
+/* FORMULARIO */
+.formulario{
+    max-width: 60rem;
+    margin: 0 auto;
 }
 
+.formulario fieldset{
+    border: 1px solid black;
+    margin-bottom: 2rem;
+}
+
+.formulario legend{
+    background-color: #005485;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.campo label{
+    flex-basis: 5rem;
+}
+/* .campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="tel"], */
+.campo input:not( [ type="radio" ] ),
+textarea,
+select{
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
 /* .grid-footer div{ */
     /* esto representa el fator de creciemiento 
        sele agrega un 1px mas
