@@ -75,6 +75,14 @@
  .text-center{
     text-align: center;
  }
+ .max-width-30{
+    max-width: 30rem;
+ }
+
+ .border-btn-10{
+    border-radius: 1rem;
+ }
+
 
 .btn{
     background-color: #8cbc00;
@@ -82,7 +90,7 @@
     /* Toma todo el ancho dispible */
     display: block;
     text-transform: uppercase;
-    font-weight: 900;
+    font-weight: 700;
     padding: 1rem;
     /* transiciones  
         tiene tres valores el primero es
@@ -91,6 +99,8 @@
         y el tercero el efecto
     */
     transition: background-color .3s ease-out ;
+    text-align: center;
+
  }
 
  .btn:hover{
@@ -450,6 +460,32 @@ me situe por encima o pase por encima de a entonces se activara un hover
 */
 .entrada:last-of-type{
     border: none;
+}
+
+.entrada-meta{
+    /* Mandar fecha y autor a acada extremo */
+    /* flex los alinea horizontalmente */
+    display: flex;
+    /* los manda acada extremo */
+    justify-content: space-between;
+}
+.entrada-meta p {
+    /* font-weight: regular; */
+    /* font-weight: 400; */
+
+    /* font-weight: bold; */
+    font-weight: 700;
+
+}
+.entrada-meta span{
+    color: #037dc0;
+}
+
+/* ENTRADA BLOG */
+
+.contenido-entrada-blog{
+    width: 60rem;
+    margin: 0 auto;
 }
 
 /* .grid-footer div{ */
