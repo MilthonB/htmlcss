@@ -488,6 +488,25 @@ me situe por encima o pase por encima de a entonces se activara un hover
     margin: 0 auto;
 }
 
+/* GALERIA */
+
+.galeria{
+    list-style: none;
+    /* Eliminar el padding y el margin  */
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.galeria img{
+    /* Se asigna un tama;o y luego se aplica la aliniaxion con cover objetfit */
+    height: 40rem;
+    width: 40rem;
+    object-fit: cover;
+}
+
 /* .grid-footer div{ */
     /* esto representa el fator de creciemiento 
        sele agrega un 1px mas
