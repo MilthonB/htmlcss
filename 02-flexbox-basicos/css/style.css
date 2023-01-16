@@ -69,6 +69,8 @@ h1, h2 {
 
 /* 1 */
 
+/* Por default se agrega un felx direction que se ma;an row */
+/*  entonces los elemento se mostrar en row de izq a der */
 .d-flex{
  display: flex;   
 }
