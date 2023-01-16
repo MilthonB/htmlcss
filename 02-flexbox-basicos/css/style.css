@@ -192,3 +192,18 @@ h1, h2 {
 
 }
 
+/* 8 */
+.d-flex-8{
+    display: flex;
+}
+
+.d-flex-8 .box{
+
+    /* indica el valor iniciall de box  */
+    /* cajas flexibles tienen a crecer o aumentar su tam;ano segun si contenido */
+    /* El tama;o inicia y despues aumenta dependiendo de su contenido */
+    flex-basis: 33.3%;
+    flex-basis: 200px;
+
+}
+
