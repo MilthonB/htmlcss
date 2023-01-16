@@ -144,3 +144,18 @@ h1, h2 {
     align-items: baseline;
 }
 
+/* 6 */
+.d-flex-6{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+
+    /* A esto se le conose como los ejes de flexbox */
+    /* En row el align-item se utilizan para orientarlos de arriba abajo  */
+    /* cuando es columna las direcciones cambian */
+    /* alig-item ayudara para alienarlos de izq a der */
+    /* y justify-conntetn de arriba a abajo */
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
