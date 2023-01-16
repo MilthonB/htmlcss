@@ -246,3 +246,20 @@ h1, h2 {
     flex-basis: 33.3%;
 }
 
+/* 11 */
+/* Como funciona el factor de crecimiento */
+/* Como hcaer crecer las cajas  */
+.d-flex-11{
+    display: flex;
+
+}
+
+.d-flex-11 .box{
+    /* Facto de crecimiento */
+    /* Por default se usa el 0 para denotar el factor de crecimeinto lo que quiere deicr que no tiene crecimeinto */
+    /* flex-grow: 0; */
+    /* El facto de crecimeinto 1 signiifca que reparatira 1px a acada caja que tenga hasta ocupar el espacio disponible tambien se pueden usar otro valor en la reparticion 
+    de px */
+    flex-grow: 1;
+}
+
