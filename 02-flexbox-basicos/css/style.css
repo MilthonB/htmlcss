@@ -263,3 +263,19 @@ h1, h2 {
     flex-grow: 1;
 }
 
+/* 12 */
+.d-flex-12{
+    display: flex;
+}
+
+.d-flex-12 .box{
+    flex-grow: 1;
+    flex-basis: 300px;
+    /* El valor inicial de flex-shrink es de 1 */
+}
+
+/* Los valores se van compriendo en este caso sera el hijo 3 */
+.d-flex-12 .box:nth-child(3){
+    flex-shrink: 2;
+}
+
