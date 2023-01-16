@@ -279,3 +279,21 @@ h1, h2 {
     flex-shrink: 2;
 }
 
+/* 13 */
+.d-flex-13{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 2rem;
+}
+.d-flex-13 .box{
+    /* flex-basis: 33.3%;
+    flex-grow: 1;
+    flex-shrink: 1; */
+
+    
+    /* flex: 1; */
+    /* flex: 0 0 calc(33.3% -1rem); */
+    
+    flex: 1 0 33.3%;
+}
+
