@@ -71,6 +71,19 @@ h1, h2 {
 
 /* Por default se agrega un felx direction que se ma;an row */
 /*  entonces los elemento se mostrar en row de izq a der */
+/* Felx direction y todos los valores que se pueden usar  */
 .d-flex{
  display: flex;   
+}
+
+/* 2 */
+
+.d-flex-2{
+    display: flex;
+    /* automaticamente se agrega un  */
+    /* flex-direction: row; */
+    /* por default */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    flex-direction: row-reverse;
 }
