@@ -159,3 +159,36 @@ h1, h2 {
     justify-content: space-between;
 }
 
+
+/* Flexbox froggy */
+
+/* 7 */
+.d-flex-7{
+
+    display: flex;
+    height: 800px;
+
+    /* valores iniciales */
+    /* flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch; */
+
+    /* Siempre que sea row */
+    /* justify horizontal */
+    justify-content: flex-end;
+    /* align de forma vertical */
+    align-items: center;
+
+
+    /* Si cambiamos la direccion a colum entonces las direcciones de invierten */
+
+    flex-direction: column;
+
+    /* justify vertical */
+    justify-content: center;
+    /* align horizontal */
+    align-items: flex-end;
+
+
+}
+
