@@ -87,3 +87,60 @@ h1, h2 {
     /* flex-direction: column-reverse; */
     flex-direction: row-reverse;
 }
+
+/* 3 */
+/* lo horienta de forma horizontal para eso sirve el justify-content */
+.d-flex-3{
+
+    display: flex;
+    /* flex-star es el defaul en el justify-content */
+    /* justify-content: flex-start; */
+    /* Contenido del lado derecho */
+    /* justify-content: flex-end; */
+    /* Contenido centrado */
+    /* justify-content: center; */
+    /* El contendios se distribuye a lo largo del contenedor */
+    /* justify-content: space-around; */
+    /* Deja la misma separacion */
+    /* justify-content: space-evenly; */
+    /* Separa star center end  */
+    justify-content: space-between;
+}
+
+/* 4 */
+.d-flex-4{
+
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    justify-content: space-between;
+
+}
+
+/* 5 */
+/* */
+.d-flex-5{
+    display: flex;
+    height: 700px;
+
+    /* 5 valores que se pueden usar  */
+    /* stretch 
+        start
+        end
+        center
+    */
+    /* Valor por default */
+    /* align-items: stretch; */
+
+    /* align-item sirve para alinear el contenido cuando la direccion es row de forma vertical */
+    /* align-items: flex-start;
+    align-items: center; */
+    /* align-items: end; */
+    /* muy similar el flex-start */
+    align-items: baseline;
+}
+
