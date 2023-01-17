@@ -61,7 +61,20 @@ h1, h2 {
 /* 01 */
 .grid-1{
     display: grid;
-    
+}
+
+.grid-2{
+    display: grid;
+    /* Cantidad de columnas */
+    /* Crear columnas que can de izq a der */
+    grid-template-columns: 300px 300px 300px;
+}
+.grid-2 .box:nth-child(2){
+    /* numero de la izquierda donde se va a posicionar el elemento en este caso el 2 */
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+    /* short hand */
+    grid-column: 1 / 2;
 }
 
 
