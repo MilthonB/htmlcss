@@ -133,9 +133,17 @@ h1, h2 {
     grid-column: 1 / 2;
 }
 
+/* 7 */
 .grid-7{
     display: grid;
     /* para dividir el box en fracciones */
-    grid-template-columns: 2fr repeat(3,1fr);
+    /* grid-template-columns: 2fr repeat(3,1fr); */
+    /* para crear fracciones en row se necesita tener una defiicion de medida si no hay no tene caso poner fracciones al row */
+    grid: repeat(2, 50rem) / repeat(3, 1fr);
 }
+/* 8 */
+.grid-8{
+    display: grid;
+    grid: repeat(2, 20rem) / repeat(3, 1fr);
 
+}
