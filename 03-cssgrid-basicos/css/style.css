@@ -117,3 +117,25 @@ h1, h2 {
     grid: repeat(2,300px) / repeat(3, 300px);
 
 }
+
+/* 6 */
+.grid-6{
+    display: grid;
+    grid: repeat(2,300px) / repeat(3, 300px);
+    /* Evita tener espacios libres cuando se hace un grid column */
+    /* por default tiene un auto floe initial asi que puedes cambiarlo a column o row */
+    /* grid-auto-flow: column; */
+    /* No deja espacios libres */
+    grid-auto-flow: dense;
+}
+
+.grid-6 .box:nth-child(2){
+    grid-column: 1 / 2;
+}
+
+.grid-7{
+    display: grid;
+    /* para dividir el box en fracciones */
+    grid-template-columns: 2fr repeat(3,1fr);
+}
+
