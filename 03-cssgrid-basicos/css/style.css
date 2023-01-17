@@ -56,3 +56,13 @@ h1, h2 {
     font-size: 4rem;
     margin-bottom: 2rem;
 }
+
+/* Solo afecta al primer nivel de hijos */
+/* 01 */
+.grid-1{
+    display: grid;
+    
+}
+
+
+
