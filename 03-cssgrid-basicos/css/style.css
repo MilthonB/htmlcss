@@ -145,5 +145,16 @@ h1, h2 {
 .grid-8{
     display: grid;
     grid: repeat(2, 20rem) / repeat(3, 1fr);
+    /* Espacios para los elementos usando gap */
+    /* column-gap: 4rem;
+    row-gap: 4rem; */
 
+    /* Short hand */
+    /* Cuando solo pones un valor toma ese vaor para row y column */
+    /* gap: 4rem 1rem; */
+    gap: 4rem;
+}
+.grid-8 .box{
+    /* para eliminar los margin */
+    margin: 0px;
 }
